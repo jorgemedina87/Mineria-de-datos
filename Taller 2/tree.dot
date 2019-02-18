@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="hour <= 6.5\nmse = 32810.299\nsamples = 10886\nvalue = 191.574"] ;
+1 [label="hour <= 5.5\nmse = 1565.559\nsamples = 3139\nvalue = 32.582"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="hour <= 1.5\nmse = 945.78\nsamples = 2684\nvalue = 25.178"] ;
+1 -> 2 ;
+3 [label="mse = 1643.407\nsamples = 909\nvalue = 44.51"] ;
+2 -> 3 ;
+4 [label="mse = 299.092\nsamples = 1775\nvalue = 15.277"] ;
+2 -> 4 ;
+5 [label="workingday <= 0.5\nmse = 2990.465\nsamples = 455\nvalue = 76.259"] ;
+1 -> 5 ;
+6 [label="mse = 329.469\nsamples = 145\nvalue = 19.993"] ;
+5 -> 6 ;
+7 [label="mse = 2061.663\nsamples = 310\nvalue = 102.577"] ;
+5 -> 7 ;
+8 [label="hour <= 20.5\nmse = 31077.582\nsamples = 7747\nvalue = 255.996"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="hour <= 15.5\nmse = 32410.315\nsamples = 6379\nvalue = 282.555"] ;
+8 -> 9 ;
+10 [label="mse = 24562.538\nsamples = 4099\nvalue = 243.95"] ;
+9 -> 10 ;
+11 [label="mse = 39022.862\nsamples = 2280\nvalue = 351.959"] ;
+9 -> 11 ;
+12 [label="hour <= 22.5\nmse = 6236.566\nsamples = 1368\nvalue = 132.152"] ;
+8 -> 12 ;
+13 [label="mse = 6660.694\nsamples = 912\nvalue = 153.474"] ;
+12 -> 13 ;
+14 [label="mse = 2660.636\nsamples = 456\nvalue = 89.509"] ;
+12 -> 14 ;
+}
